@@ -1,0 +1,8 @@
+digraph BoyStateMachine {
+    rankdir=LR;
+    node [shape=circle];
+    IDLE [label="IDLE"];
+    start [shape=point];
+    start -> IDLE;
+    IDLE -> IDLE [label="update (repeat)"];
+}
